@@ -1,0 +1,12 @@
+$kind: http-request
+url: |
+  {{ baseUrl }}/api/issues/<issue-id>/status
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \ \"status\": \"Resolved\"\r
+
+    }\r\n"
+order: 3000
